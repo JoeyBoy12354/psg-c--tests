@@ -1,0 +1,496 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-common\\psg-automated-nunit-common.csproj": {}
+  },
+  "projects": {
+    "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-common\\psg-automated-nunit-common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-common\\psg-automated-nunit-common.csproj",
+        "projectName": "psg-automated-nunit-common",
+        "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-common\\psg-automated-nunit-common.csproj",
+        "packagesPath": "C:\\Users\\0109135171089\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\0109135171089\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Dev\\psg-mypractice-api-client\\Psg.myPractice.Api.Client\\Psg.myPractice.Api.Client\\bin\\Debug\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/PSGHub/Distribution/_packaging/PSG-Distribution-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\psg-automated-nunit-shared.csproj": {
+                "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\psg-automated-nunit-shared.csproj"
+              },
+              "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj": {
+                "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj"
+              },
+              "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\Psg.Standardised.Api.Common.csproj": {
+                "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\Psg.Standardised.Api.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.10.0, )"
+            },
+            "HtmlTags": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\psg-automated-nunit-shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\psg-automated-nunit-shared.csproj",
+        "projectName": "psg-automated-nunit-shared",
+        "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\psg-automated-nunit-shared.csproj",
+        "packagesPath": "C:\\Users\\0109135171089\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\0109135171089\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Dev\\psg-mypractice-api-client\\Psg.myPractice.Api.Client\\Psg.myPractice.Api.Client\\bin\\Debug\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/PSGHub/Distribution/_packaging/PSG-Distribution-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj": {
+                "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Humanizer.Core": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Playwright": {
+              "target": "Package",
+              "version": "[1.44.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "Refit.HttpClientFactory": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj": {
+      "version": "1.0.47",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj",
+        "projectName": "Psg.Common.Registrations",
+        "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj",
+        "packagesPath": "C:\\Users\\0109135171089\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\0109135171089\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Dev\\psg-mypractice-api-client\\Psg.myPractice.Api.Client\\Psg.myPractice.Api.Client\\bin\\Debug\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/PSGHub/Distribution/_packaging/PSG-Distribution-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.1, )"
+            },
+            "DotNetZip": {
+              "target": "Package",
+              "version": "[1.16.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.4.2, )"
+            },
+            "Polly.Contrib.WaitAndRetry": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Serilog.Enrichers.CorrelationId": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Enrichers.GlobalLogContext": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Enrichers.Span": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "SerilogTracing": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "SerilogTracing.Expressions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "SerilogTracing.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "SerilogTracing.Instrumentation.SqlClient": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\Psg.Standardised.Api.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\Psg.Standardised.Api.Common.csproj",
+        "projectName": "Psg.Standardised.Api.Common",
+        "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\Psg.Standardised.Api.Common.csproj",
+        "packagesPath": "C:\\Users\\0109135171089\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Standardised.Api.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\0109135171089\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Dev\\psg-mypractice-api-client\\Psg.myPractice.Api.Client\\Psg.myPractice.Api.Client\\bin\\Debug\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/PSGHub/Distribution/_packaging/PSG-Distribution-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj": {
+                "projectPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\Psg.Common.Registrations\\Psg.Common.Registrations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FastMember": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.DynamicLinq": {
+              "target": "Package",
+              "version": "[8.4.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+All Tests Passed!
+-------------------
+
+
+Total Tests:	1
+-------------------
+
+
+Failed:	0	Passed:	1	Skipped:0
+==============================================
+
+
+Passed: 1
+--------------
+
+
+[
+  {
+    "Type": "Automated",
+    "Key": "Settings - Countersign on my Behalf Pagination",
+    "Status": "Passed",
+    "TestSuite": null,
+    "TestName": "Settings_Countersign_On_My_Behalf_Pagination",
+    "Description": "Log in Johan Website ( role Administrator) then search and login as Client Care Centre, PSG Client Care Centre , go to settings and then preferences. Click on Countersign on my behalf. Ensure that you can navigate between the pages.",
+    "Message": null,
+    "StackTrace": null,
+    "Date": "2025-03-04T14:09:57.9439899+02:00",
+    "Origin": "CSharp",
+    "RunId": null,
+    "IsProd": true,
+    "Host": "PSGNTB015",
+    "Ip": "192.168.1.107",
+    "User": "PSG\\0109135171089"
+  }
+]
+
+

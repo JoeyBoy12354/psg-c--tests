@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Psg.Common.Registrations</id>
+    <version>1.0.47</version>
+    <authors>Distribution</authors>
+    <description>Default registrations of Serilog, Polly, etc</description>
+    <tags>Psg Serilog Seq Polly Client Tracing</tags>
+    <repository type="git" url="https://dev.azure.com/PSGHub/Distribution/_git/psg-common-registrations" commit="18cd72e849cca66e22387d86ceef845d50da46d2" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="ClosedXML" version="0.104.1" exclude="Build,Analyzers" />
+        <dependency id="DotNetZip" version="1.16.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="8.0.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="8.0.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="8.0.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http.Polly" version="8.0.10" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="Polly" version="8.4.2" exclude="Build,Analyzers" />
+        <dependency id="Polly.Contrib.WaitAndRetry" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.AspNetCore" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.CorrelationId" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.Environment" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.GlobalLogContext" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.Process" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.Span" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Enrichers.Thread" version="4.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Async" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.File" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Seq" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="SerilogTracing" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="SerilogTracing.Expressions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="SerilogTracing.Instrumentation.AspNetCore" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="SerilogTracing.Instrumentation.SqlClient" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore" version="6.8.1" exclude="Build,Analyzers" />
+        <dependency id="System.IdentityModel.Tokens.Jwt" version="8.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net8.0/appsettings.serilog.example.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.dll" target="lib\net8.0\Psg.Common.Registrations.dll" />
+    <file src="C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.xml" target="lib\net8.0\Psg.Common.Registrations.xml" />
+    <file src="C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\appsettings.serilog.example.json" target="content\appsettings.serilog.example.json" />
+    <file src="C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\appsettings.serilog.example.json" target="contentFiles\any\net8.0\appsettings.serilog.example.json" />
+  </files>
+</package>

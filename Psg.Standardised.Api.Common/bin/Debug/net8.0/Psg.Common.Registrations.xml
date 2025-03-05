@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Psg.Common.Registrations</name>
+    </assembly>
+    <members>
+        <member name="M:Psg.Common.Registrations.Clients.ClientExtensions.RegisterHttpClientAndConfig``2(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.String,System.String,System.String)">
+            <summary>
+            Registers a PSgApiClient and it's config.
+            <br/> Assumes Appsettings are in format {Name} without 'Client' in text, and Url is under the 'Api' field.
+            <br/> Contains overloads to override the JsonPaths.
+            </summary>
+            <typeparam name="TClient"></typeparam>
+            <typeparam name="TClientConfig"></typeparam>
+            <param name="builder"></param>
+            <param name="sectionKey">Name of the Section header for the Client in the Appsettings. <br/>If empty, default settings will be used</param>
+            <param name="urlKey">Name of the field which contains the Url. <br/>If empty, defualt fieldname will be used</param>
+            <param name="sectionConfigKey">Name of the Section header for the Config in the Appsettings. <br/>If empty, default settings will be used</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Psg.Common.Registrations.Clients.ClientExtensions.RegisterHttpClient``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.String,System.String)">
+            <summary>
+            Register a PSG Api client
+            </summary>
+            <typeparam name="TClient"></typeparam>
+            <param name="builder"></param>
+            <param name="sectionKey"></param>
+            <param name="urlKey"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Psg.Common.Registrations.Extensions.DictionaryExtensions.ArrayMerge``1(System.Collections.Generic.Dictionary{System.String,``0},System.Collections.Generic.Dictionary{System.String,``0})">
+            <summary>
+            Merges 2 dictionaries. 
+            <br/><br/>The <c>defaultOptions</c> will be overwritten by similar keys in the <c>providedOptions</c>.
+            <br/><br/>Similar to the <c>array_merge</c> function in <c>PHP</c>.
+            </summary>     
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Extensions.DictionaryExtensions.TryGetValue``1(System.Collections.Generic.Dictionary{System.String,``0},System.String)">
+            <summary>
+             If the value is a boolean, returns the boolean value.
+            </summary>     
+        </member>
+        <member name="M:Psg.Common.Registrations.Extensions.EnvironmentExtensions.IsLocal(Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Ckecks if Environment is any kind of local environment.
+            </summary>
+            <param name="hostEnvironment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Extensions.EnvironmentExtensions.IsNotLocal(Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Checks if Environment is NOT local.
+            </summary>
+            <param name="hostEnvironment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.JsonHelper.CleanJsonFieldInDynamicObject(System.Object,System.String)">
+            <summary>
+            Use this to fix json for display purposes.
+            </summary>
+            <param name="dynamicObj"></param>
+            <param name="fieldName"></param>
+        </member>
+        <member name="T:Psg.Common.Registrations.Helpers.RetryHelper">
+            <summary>
+            Class to Execute async Code with retry
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.GetAsyncRetryPolicy(System.Int32,System.Int32)">
+            <summary>
+            Gets an Polly AsyncRetryPolicy to execute code with retry
+            </summary>      
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.GetRetryPolicy(System.Int32,System.Int32)">
+            <summary>
+            Gets an Polly RetryPolicy to execute code with retry
+            </summary>      
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Int32,System.Int32)">
+            <summary>
+            Execute async code with retry and return result.
+            </summary>       
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Int32,System.Int32)">
+            <summary>
+            Execute async code with retry.
+            </summary>  
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.Execute``1(System.Func{``0},System.Int32,System.Int32)">
+            <summary>
+            Execute code with retry and return result.
+            </summary>       
+        </member>
+        <member name="M:Psg.Common.Registrations.Helpers.RetryHelper.Execute(System.Action,System.Int32,System.Int32)">
+            <summary>
+            Execute code with retry.
+            </summary>       
+        </member>
+        <member name="T:Psg.Common.Registrations.Logging.LoggingExtensions">
+            <summary>
+            Gets a logger that can be used during startup
+            </summary> 
+        </member>
+        <member name="M:Psg.Common.Registrations.Logging.LoggingExtensions.GetStartupLogger``1(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Gets a logger that can be used during startup
+            </summary>  
+        </member>
+        <member name="M:Psg.Common.Registrations.Logging.LoggingExtensions.GetStartupLogger(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Gets a logger that can be used during startup
+            </summary>  
+        </member>
+        <member name="M:Psg.Common.Registrations.Logging.LoggingExtensions.GetStartupLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Gets a logger that can be used during startup
+            </summary>  
+        </member>
+        <member name="T:Psg.Common.Registrations.Polly.Policies.PollyPolicies">
+            <summary>
+            Contains Policies for Polly.
+            Can add more advanced policies such as CircuitBreaker, Fallback at a later stage    
+            </summary>
+        </member>
+        <member name="T:Psg.Common.Registrations.Serilog.Models.SerilogValidationModel">
+            <summary>
+            Just a general validation model to check if the Serilog config was found in appsettings
+            </summary>
+        </member>
+        <member name="T:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions">
+            <summary>
+            Contains extension methods for PSG registrations
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.AddSerilogPsg(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String)">
+            <summary>
+            Add Serilog to the application with default PSG sinks and contexts.
+            </summary>
+            <param name="builder"></param>
+            <param name="ApplicationName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.AddSerilogPsg(Microsoft.Extensions.Configuration.IConfigurationRoot,System.String,System.String)">
+            <summary>
+            Setup Serilog in projects that do not have dependency injection
+            </summary>
+            <param name="config"></param>
+            <param name="ApplicationName"></param>
+            <param name="environment"></param>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.UseSerilogTracingPsg(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Add Serilog Tracing to call, which can be viewed in Seq.
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.ValidateOnStart(Psg.Common.Registrations.Serilog.Models.SerilogConfigStatus)">
+            <summary>
+            Throw an error if Serilog config is not found in appsettings, or if it does not contain at least 1 'WriteTo' section.
+            </summary>
+            <param name="status"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.UseSerilogPsgMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Extension method used to add the middleware to the HTTP request pipeline
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogRegistrationExtensions.UseSerilogPsg(Microsoft.AspNetCore.Builder.WebApplication,System.Boolean,System.Boolean)">
+            <summary>
+            Adds UseSerilogRequestLogging() and UseSerilogPsgMiddleware()
+            </summary>      
+        </member>
+        <member name="T:Psg.Common.Registrations.Serilog.SerilogTraceHelper">
+            <summary>
+            Quickly setup a Serilog Trace in methods.
+            <br/>
+            <br/> More info at <see href="https://docs.datalust.co/docs/serilogtracing"/> 
+            <br/>
+            <br/> REMEMBER DISPOSE AFTER USE!
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogTraceHelper.GetTraceToSharedLogger">
+            <summary>
+            Gets a Serilog Activity Trace logger.
+            <br/>
+            <br/> Only use this if you did not add  app.UseSerilogTracingPsg() to Program.cs.
+            <br/>
+            <br/> Meant to be discarded, so it can be assigned to a discard character.
+            <br/>
+            <br/> Use GetActivity() after this, to get a LoggerActivity that can measure the activity.
+            <br/>
+            <br/> REMEMBER TO DISPOSE IT!
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogTraceHelper.StartActivity(System.String,System.Object[])">
+            <summary>
+            Quickly starts a Serilog Trace Activity that logs to the Serilog shared Logger.
+            <br/>
+            <br/> Use activity.Complete() when activity completed successful,
+            <br/> or  activity.Complete(LogEventLevel.Error, ex); when it failed ( usually in the catch block ).
+            <br/>
+            <br/> If you did not add app.UseSerilogTracingPsg(); in Program.cs,
+            <br/> Make sure to use GetActivityTraceLogger before this.
+            <br/>
+            <br/> REMEMBER TO DISPOSE IT!
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Serilog.SerilogTraceHelper.StartActivity(Serilog.Events.LogEventLevel,System.String,System.Object[])">
+            <summary>
+            Quickly starts a Serilog Trace Activity that logs to the Serilog shared Logger.
+            <br/>
+            <br/> Use activity.Complete() when activity completed successful,
+            <br/> or  activity.Complete(LogEventLevel.Error, ex); when it failed ( usually in the catch block ).
+            <br/>
+            <br/> If you did not add app.UseSerilogTracingPsg(); in Program.cs,
+            <br/> Make sure to use GetActivityTraceLogger before this.
+            <br/>
+            <br/> REMEMBER TO DISPOSE IT!
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Swagger.SwaggerExtensions.AddSwaggerPsg(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String)">
+            <summary>
+            Register Swagger with the 'Auth' button. Remember to Add the
+            <br/> ['GenerateDocumentationFile' = True] element
+            <br/> in the project file under 'PropertyGroup'
+            </summary>
+            <param name="builder"></param>
+            <param name="ApplicationName"></param>
+        </member>
+        <member name="T:Psg.Common.Registrations.Version.RegistrationsVersion">
+            <summary>
+            Gets the Psg.Common.Registrations version
+            </summary>
+        </member>
+        <member name="P:Psg.Common.Registrations.Version.RegistrationsVersion.Version">
+            <summary>
+            The Psg.Common.Registrations version
+            </summary>
+        </member>
+        <member name="P:Psg.Common.Registrations.Version.RegistrationsVersion.Name">
+            <summary>
+            The name Psg.Common.Registrations
+            </summary>
+        </member>
+        <member name="M:Psg.Common.Registrations.Version.RegistrationsVersion.AddPsgCommonRegistrationsVersion(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds the Psg.Common.Registrations version to the InfoController.
+            </summary>
+            <param name="infoDictionary"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

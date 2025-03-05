@@ -1,0 +1,16 @@
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\appsettings.serilog.example.json
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.deps.json
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.dll
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.pdb
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\bin\Debug\net8.0\Psg.Common.Registrations.xml
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.csproj.AssemblyReference.cache
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.AssemblyInfoInputs.cache
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.AssemblyInfo.cs
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.csproj.CoreCompileInputs.cache
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.sourcelink.json
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.dll
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\refint\Psg.Common.Registrations.dll
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.xml
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\Psg.Common.Registrations.pdb
+C:\Dev\psg-mypractice-automated-tests-csharp\Psg.Common.Registrations\obj\Debug\net8.0\ref\Psg.Common.Registrations.dll
