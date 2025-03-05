@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "psg-automated-nunit-test", "psg-automated-nunit-test\psg-automated-nunit-test.csproj", "{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "psg-automated-nunit-shared", "psg-automated-nunit-shared\psg-automated-nunit-shared.csproj", "{A6B5F1CB-7B56-4F0D-8FAB-6869EE92F8C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "psg-automated-nunit-common", "psg-automated-nunit-common\psg-automated-nunit-common.csproj", "{FBA5BFD4-AD0E-4064-8D79-2178799FD422}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psg.Standardised.Api.Common", "Psg.Standardised.Api.Common\Psg.Standardised.Api.Common.csproj", "{7E8D974C-B02C-44AC-B257-B626A9A0D51C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psg.Common.Registrations", "Psg.Common.Registrations\Psg.Common.Registrations.csproj", "{A52EB8D5-BD59-41D1-8E7A-D62A9257CC30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B5F1CB-7B56-4F0D-8FAB-6869EE92F8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B5F1CB-7B56-4F0D-8FAB-6869EE92F8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B5F1CB-7B56-4F0D-8FAB-6869EE92F8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B5F1CB-7B56-4F0D-8FAB-6869EE92F8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA5BFD4-AD0E-4064-8D79-2178799FD422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA5BFD4-AD0E-4064-8D79-2178799FD422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA5BFD4-AD0E-4064-8D79-2178799FD422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA5BFD4-AD0E-4064-8D79-2178799FD422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8D974C-B02C-44AC-B257-B626A9A0D51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8D974C-B02C-44AC-B257-B626A9A0D51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8D974C-B02C-44AC-B257-B626A9A0D51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8D974C-B02C-44AC-B257-B626A9A0D51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52EB8D5-BD59-41D1-8E7A-D62A9257CC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52EB8D5-BD59-41D1-8E7A-D62A9257CC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52EB8D5-BD59-41D1-8E7A-D62A9257CC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52EB8D5-BD59-41D1-8E7A-D62A9257CC30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {184C9B55-BCB4-4886-A86B-8C259D4B5F3A}
+	EndGlobalSection
+EndGlobal

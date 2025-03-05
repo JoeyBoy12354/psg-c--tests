@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>psg_automated_nunit_common</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>	
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="AngleSharp" Version="1.1.2" />
+	  <PackageReference Include="FluentValidation" Version="11.10.0" />
+	  <PackageReference Include="HtmlTags" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+	  <PackageReference Include="Refit" Version="7.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\psg-automated-nunit-shared\psg-automated-nunit-shared.csproj" />
+	  <ProjectReference Include="..\Psg.Common.Registrations\Psg.Common.Registrations.csproj" />
+	  <ProjectReference Include="..\Psg.Standardised.Api.Common\Psg.Standardised.Api.Common.csproj" />
+	</ItemGroup>
+
+</Project>

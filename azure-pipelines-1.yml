@@ -1,0 +1,78 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+- develop
+- release
+
+pool:
+  vmImage: windows-2022
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+
+# - task: SonarQubePrepare@5
+#   displayName: 'sonarqube prepare'
+#   inputs:
+#     SonarQube: 'psg-dist-sq-test'
+#     scannerMode: 'MSBuild'
+#     projectKey: 'psg-automated-tests'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: 'restore'
+    projects: '**/*sln'
+    feedsToUse: 'select'
+    vstsFeed: '7857c124-7e56-410c-b229-7bb48ded053e/035c432e-6417-427b-8d93-4e28d3c7e365'
+
+
+- script: |
+    echo '{ "Environment": "Test" }' > $(Build.SourcesDirectory)/testsettings.json
+  displayName: 'Update testsettings.json'
+
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+# - task: DotNetCoreCLI@2
+#   displayName: 'dotnet test'
+#   inputs:
+#     command: test
+#     projects: '**/*Tests/*.csproj'
+#     arguments: '--configuration $(buildConfiguration)'
+
+# - task: DotNetCoreCLI@2
+#   displayName: 'dotnet publish'
+#   inputs:
+#     command: 'publish'
+#     publishWebProjects: true
+#     projects: 'psg-automated-nunit-test.csproj'
+#     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+#     modifyOutputPath: false
+
+# - task: SonarQubeAnalyze@5
+#   displayName: 'sonarqube scan'
+
+# - task: SonarQubePublish@5
+#   displayName: 'sonarqube publish'
+#   inputs:
+#     pollingTimeoutSec: '300'
+
+- task: PublishPipelineArtifact@1
+  displayName: 'publish artifact'
+  condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), in(variables['build.sourceBranch'], 'refs/heads/master','refs/heads/develop', 'refs/heads/release'))
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'build-artifact'
+    publishLocation: 'pipeline'

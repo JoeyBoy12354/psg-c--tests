@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-test\\Tests\\Settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:psg-automated-nunit-test\\Tests\\Settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}|psg-automated-nunit-test\\psg-automated-nunit-test.csproj|c:\\dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-test\\tests\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}|psg-automated-nunit-test\\psg-automated-nunit-test.csproj|solutionrelative:psg-automated-nunit-test\\tests\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-test\\Tests\\Advice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:psg-automated-nunit-test\\Tests\\Advice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}|psg-automated-nunit-test\\psg-automated-nunit-test.csproj|c:\\dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-test\\tests\\advice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B401C1C-FED3-45D4-945F-F8C9ACDF0324}|psg-automated-nunit-test\\psg-automated-nunit-test.csproj|solutionrelative:psg-automated-nunit-test\\tests\\advice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "psg-automated-nunit-test\\Tests\\Settings.cs",
               "ToolTip": "C:\\Dev\\psg-mypractice-automated-tests-csharp\\psg-automated-nunit-test\\Tests\\Settings.cs",
               "RelativeToolTip": "psg-automated-nunit-test\\Tests\\Settings.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAYwGUAAAB3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T12:38:27.22Z",
               "EditorCaption": ""
